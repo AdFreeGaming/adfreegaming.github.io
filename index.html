@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdFreeGaming - Free Browser Games With No Ads</title>
+<meta name="description" content="AdFreeGaming: free browser games with no ads, no pop-ups and no sign-up. Play The Toy Fairy, a pixel-art isometric bedtime tidy-up game.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0d24">
+<link rel="canonical" href="https://adfreegaming.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AdFreeGaming">
+<meta property="og:title" content="AdFreeGaming - Free Browser Games With No Ads">
+<meta property="og:description" content="Free browser games with no ads, no pop-ups and no sign-up.">
+<meta property="og:url" content="https://adfreegaming.github.io/">
+<meta property="og:image" content="https://adfreegaming.github.io/ToyFairy/assets/bg/Level1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root { --ink: #1a1030; --cream: #fbefc0; --gold: #c9a85a; --red: #b02a1c; --blue: #2f6fd0; --brown: #5a3a1a; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    font-family: "Press Start 2P", "Courier New", monospace;
+    color: var(--ink);
+    background: #0b0d24 url("https://adfreegaming.github.io/ToyFairy/assets/bg/Level1.jpg") center / cover fixed no-repeat;
+    image-rendering: pixelated;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px 16px;
+  }
+  body::before { content: ""; position: fixed; inset: 0; background: rgba(8, 8, 34, 0.7); }
+  main {
+    position: relative; width: 100%; max-width: 1000px;
+    background: var(--cream); padding: 40px 48px 36px;
+    box-shadow: 0 0 0 4px var(--gold), 0 0 0 10px var(--ink);
+    text-align: center;
+  }
+  h1 {
+    margin: 0; font-size: clamp(22px, 5.6vw, 46px); font-weight: normal; color: var(--blue);
+    text-shadow: 1px 1px 0 #16306a, 2px 2px 0 #16306a, 3px 3px 0 #16306a, 4px 4px 0 #16306a, 5px 5px 0 #16306a, 6px 6px 0 #16306a, 9px 9px 0 var(--ink);
+  }
+  .thanks { margin: 26px 0 22px; font-size: clamp(12px, 2.4vw, 20px); color: var(--red); }
+  hr { border: 0; height: 3px; background: var(--gold); margin: 0 0 28px; }
+  .row { display: flex; gap: 32px; align-items: center; justify-content: space-between; text-align: left; }
+  .copy p { margin: 0 0 22px; font-size: clamp(10px, 1.6vw, 14px); line-height: 2.2; }
+  .copy p + p { color: var(--brown); }
+  .qr { flex: none; text-align: center; }
+  .qr img { display: block; width: 240px; max-width: 60vw; height: auto; background: #fff; padding: 8px; border: 6px solid var(--ink); image-rendering: auto; }
+  .qr span { display: block; margin-top: 12px; font-size: 12px; color: var(--red); }
+  h2 { margin: 30px 0 12px; font-size: clamp(16px, 3vw, 24px); font-weight: normal; color: var(--red); }
+  .wallet {
+    display: block; margin: 0 auto; max-width: 840px; padding: 10px 12px;
+    background: #fff7dc; border: 4px solid var(--ink);
+    font: bold clamp(12px, 2.3vw, 22px) Consolas, "Courier New", monospace; overflow-wrap: anywhere; user-select: all;
+  }
+  button, .play {
+    font-family: inherit; cursor: pointer; border: 4px solid var(--ink); color: var(--ink);
+    box-shadow: 4px 4px 0 var(--ink); transition: transform .05s, box-shadow .05s;
+  }
+  button:active, .play:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
+  button:focus-visible, .play:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+  #copy { margin-top: 14px; padding: 9px 14px; font-size: 10px; background: #fff7dc; }
+  .games { margin-top: 34px; padding-top: 26px; border-top: 3px solid var(--gold); }
+  .games h2 { margin-top: 0; color: var(--blue); }
+  .play { display: inline-block; margin-top: 8px; padding: 16px 24px; font-size: clamp(12px, 2.2vw, 18px); background: #ffd24a; text-decoration: none; }
+  .play:hover { background: #ffe07a; }
+  .list { display: flex; flex-wrap: wrap; gap: 28px 40px; justify-content: center; align-items: flex-start; }
+  .game { flex: 0 1 380px; }
+  .games p { margin: 18px 0 0; font-size: 10px; line-height: 2; color: var(--brown); }
+  @media (max-width: 720px) {
+    main { padding: 28px 20px; }
+    .row { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>AdFreeGaming</h1>
+  <p class="thanks">THANK YOU FOR VISITING!</p>
+  <hr>
+  <div class="row">
+    <div class="copy">
+      <p>The games here are free to play, with no ads, no pop-ups and no sign-up.</p>
+      <p>If this matters to you, please consider donating to my Bitcoin wallet. Every little bit keeps the games ad-free!</p>
+    </div>
+    <div class="qr">
+      <img src="data:image/png;base64,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" alt="QR code for the AdFreeGaming Bitcoin wallet address" width="240" height="240">
+      <span>SCAN TO DONATE</span>
+    </div>
+  </div>
+  <h2>BITCOIN WALLET</h2>
+  <code class="wallet" id="wallet">bc1qaem3wda6usdsflx8n45ysa84d7j77wm808faft</code>
+  <button id="copy" type="button">COPY THE ADDRESS</button>
+
+  <section class="games">
+    <h2>GAMES</h2>
+    <div class="list">
+      <div class="game">
+        <a class="play" href="https://adfreegaming.github.io/ToyFairy/">THE TOY FAIRY</a>
+        <p>Pack away your toys before the Toy Fairy takes them! A pixel-art bedtime tidy-up game.</p>
+      </div>
+      <div class="game">
+        <a class="play" href="https://dm3942.github.io/MrFarts/">MR FARTS</a>
+        <p>Mr Farts jumps higher after eating beans. Collect prizes to reach his holiday destination.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+  const btn = document.getElementById('copy');
+  btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(document.getElementById('wallet').textContent.trim()); btn.textContent = 'ADDRESS COPIED!'; }
+    catch (e) { btn.textContent = 'SELECT THE ADDRESS TO COPY'; }
+    setTimeout(() => { btn.textContent = 'COPY THE ADDRESS'; }, 2000);
+  });
+</script>
+</body>
+</html>
