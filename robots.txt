@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adfreegaming.github.io/ToyFairy/sitemap.xml
+Sitemap: https://adfreegaming.github.io/sitemap.xml
